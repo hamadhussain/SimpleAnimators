@@ -1,27 +1,197 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.bird {
+  background-image: url(./Components/Assets/eag.gif);
+  height: 223px;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: mymove 5s infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@keyframes mymove {
+  0% {
+    top: 120px;
+    left: 0px;
+  }
+  25% {
+    top: 0px;
+    left: 900px;
+  }
+  50% {
+    top: 120px;
+    left: 0px;
+  }
+  100% {
+    top: 120px;
+    left: 0px;
+  }
+}
+.pikachu {
+  background-image: url(./Components/Assets/picakchu.gif);
+  height: 223px;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: mymovep 5s infinite;
+}
+
+@keyframes mymovep {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    top: 0px;
+    left: 2400px;
+  }
+  50% {
+    top: 0px;
+    left: 2400px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.birdd {
+  background-image: url(./Components/Assets/bird.gif);
+  height: 222px;
+  background-repeat: no-repeat;
+  border-radius: 2222px;
+  display: flex;
+  width: 216px;
+  background-color: #f1f1f1;
+  border: 1px solid #bbb;
+  box-shadow: 5px 4px 12px -3px;
 }
+.pikachuu {
+  background-image: url(./Components/Assets/picakchu.gif);
+  height: 272px;
+  background-repeat: no-repeat;
+  border-radius: 2222px;
+  border: 1px solid #bbb;
+  display: flex;
+  width: 276px;
+  background-color: #f1f1f1;
+  position: relative;
+  top: 19px;
+  box-shadow: 5px 4px 12px -3px;
+}
+
+.backgroundpk {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+.customHr {
+  height: 4px;
+  background-color: white;
+  border: none;
+  margin: 10px 0;
+  position: relative;
+  top: -70px;
+}
+.eagbg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(60, 214, 249);
+}
+
+#cloud {
+  background: rgba(255, 255, 255);
+  width: 300px;
+  height: 100px;
+  border-radius: 150px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  animation: move 3s infinite;
+}
+
+#cloud:after {
+  content: "";
+  background: rgba(255, 255, 255);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -50px;
+  left: 50px;
+}
+
+#cloud:before {
+  content: "";
+  background: rgba(255, 255, 255);
+  position: absolute;
+  width: 170px;
+  height: 150px;
+  border-radius: 50%;
+  top: -90px;
+  right: 40px;
+}
+
+@keyframes move {
+  0% {
+    transform: translatex(0);
+  }
+  50% {
+    transform: translatex(-40px);
+  }
+}
+.ebg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bgpage {
+  /* background-size: cover; */
+  /* background-size: 200px; */
+  /* background-size: contain; */
+  /* background-size: 11000px; */
+}
+
+
+@media only screen and (max-width: 400px) {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
